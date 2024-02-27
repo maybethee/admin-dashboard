@@ -47,7 +47,24 @@ table {
 	border-spacing: 0;
 }
 
-h1 {
-  color: pink;
-  font-size: 72px;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.header {
+  grid-column: 2 / 3;
+  /* background-color: red; */
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  /* background-color: green; */
+
+}
+
+.main-section {
+  grid-column: 2 / 3;
+  /* background-color: blue; */
 }

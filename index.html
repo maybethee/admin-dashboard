@@ -7,6 +7,103 @@
   <title>Admin Dashboard</title>
 </head>
 <body>
-  <h1>Dashboard Header</h1>
+  <div class="container">
+
+    <div class="header">
+
+      <div class="header-top">
+        <!-- rethink class names for header-top... -->
+        <div class="icon" id="search-icon"></div>
+        <div class="search-bar"></div>
+        <div class="icon" id="notification-icon"></div>
+        <div class="profile-pic">[pfp]</div>
+        <div class="profile-name">Morgan Oakley</div>
+      </div>
+      <div class="header-bottom">
+        <!-- do i need to separate left and right grid? -->
+        <div class="header-bottom-left">
+          <div class="profile-pic">[pfp]</div>
+          <p class="header-content">Hi there,</p>
+          <p class="header-content">Morgan Oakley (@morgan)</p>
+        </div>
+        <div class="header-bottom-right">
+          <button class="header-button">New</button>
+          <button class="header-button">Upload</button>
+          <button class="header-button">Share</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <!-- should site title be outside of sidebar class? should still be in that grid column though -->
+      <div class="site-title">Dashboard</div>
+      <div class="nav-link">Home</div>
+      <div class="nav-link">Profile</div>
+      <div class="nav-link">Messages</div>
+      <div class="nav-link">History</div>
+      <div class="nav-link">Tasks</div>
+      <div class="nav-link">Community</div>
+      <div class="nav-link">Settings</div>
+      <div class="nav-link">Support</div>
+      <div class="nav-link">Privacy</div>
+    </div>
+
+    <div class="main-section">
+    <!-- does this section header need to live inside the project section (to be in its grid? or should the headers live outside somehow?) -->
+    <div class="main-section-heading">Your Projects</div>
+    <div class="projects">
+      <div class="card">
+        <p class="title">Project Title</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+      </div>
+      <div class="card">
+        <p class="title">Project Title</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+      </div>
+      <div class="card">
+        <p class="title">Project Title</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+      </div>
+      <div class="card">
+        <p class="title">Project Title</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+      </div>
+      <div class="card">
+        <p class="title">Project Title</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+      </div>
+      <div class="card">
+        <p class="title">Project Title</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+      </div>
+    </div>
+
+      <div class="main-section-heading">Announcements</div>
+      <div class="announcements">
+        <!-- think about how to make the line between announcements, maybe using psuedo class to isolate last announcement -->
+        <div class="announcement-post">
+          <p class="announcement-title">Site Maintenance</p>
+          <p class="announcement-content">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donnec hendrerit sodales congue...</p>
+        </div>
+        <div class="announcement-post">
+          <p class="announcement-title">Community Share Day</p>
+          <p class="announcement-content">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+        </div>
+        <div class="announcement-post">
+          <p class="announcement-title">Updated Privacy Policy</p>
+          <p class="announcement-content">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+        </div>
+      </div>
+  
+      <div class="main-section-heading">Trending</div>
+      <div class="trending">
+        <!-- can img and handle/username be in one div or do i need multiple for each? -->
+        <div class="trending-account">@tegan World Piece Builder</div>
+        <div class="trending-account">@morgan Super Cool Project</div>
+        <div class="trending-account"> @kendall Life Changing App</div>
+        <div class="trending-account">@alex No Traffic Maker</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
