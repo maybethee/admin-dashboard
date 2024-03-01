@@ -16,13 +16,15 @@
         <div class="icon search" id="search-icon">[search icon]</div>
         <input type="search" class="search search-bar">
         <div class="icon" id="notification-icon">[notif]</div>
-        <div class="profile-pic">[pfp]</div>
+        <!-- <div class="profile-pic" id="pfp-2">[pfp]</div> -->
+        <img src="assets/flyingcat.png" alt="Cat held up in the air" class="profile-pic" id="pfp-2">
         <div class="profile-name">Morgan Oakley</div>
       </div>
       <div class="header-bottom">
         <!-- do i need to separate left and right grid? -->
         <div class="header-bottom-left">
-          <div class="profile-pic">[pfp]</div>
+        <img src="assets/flyingcat.png" alt="Cat held up in the air" class="profile-pic profile-pic-big" id="pfp-2">
+
           <p class="header-content">Hi there,</p>
           <p class="header-content">Morgan Oakley (@morgan)</p>
         </div>
@@ -76,7 +78,7 @@
         </div>
       </div>
 
-      <div class="announcements">
+      <div class="announcements-container">
         <div class="main-section-heading">Announcements</div>
         <!-- think about how to make the line between announcements, maybe using psuedo class to isolate last announcement -->
         <div class="announcement-block">
@@ -96,14 +98,27 @@
         </div>
       </div>
   
-      <div class="trending">
+      <div class="trending-container">
         <div class="main-section-heading">Trending</div>
         <!-- can img and handle/username be in one div or do i need multiple for each? -->
         <div class="trending-block">
-          <div class="trending-account">@tegan</br>World Piece Builder</div>
-          <div class="trending-account">@morgan</br>Super Cool Project</div>
-          <div class="trending-account"> @kendall</br>Life Changing App</div>
-          <div class="trending-account">@alex</br>No Traffic Maker</div>
+          <div class="trending-account">
+
+            <img src="assets/ice_bear_icon.png" alt="cartoon polar bear from the show We Bare Bears" class="profile-pic" id="pfp-1">
+            <p>@tegan</br>World Piece Builder</p>
+          </div>
+          <div class="trending-account">
+            <img src="assets/flyingcat.png" alt="Cat held up in the air" class="profile-pic" id="pfp-2">
+            <p>@morgan</br>Super Cool Project</p>
+            </div>
+          <div class="trending-account"> 
+            <img src="assets/sadcat.png" alt="close up of a sad cat's face" class="profile-pic" id="pfp-3">
+            <p>@kendall</br>Life Changing App</p>
+          </div>
+          <div class="trending-account">
+            <img src="assets/sakamoto_icon.jpg" alt="black cat from the show Nichijou" class="profile-pic" id="pfp-4">
+            <p>@alex</br>No Traffic Maker</p>
+          </div>
         </div>
       </div>
     </div>
