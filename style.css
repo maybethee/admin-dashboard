@@ -51,6 +51,7 @@ table {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1.5fr 5fr;
+  background-color: #e6ece9;
   gap: 4px;
 }
 
@@ -59,23 +60,27 @@ table {
   grid-row: 1 / 2;
   display: grid;
   grid-template-rows: 1fr 2fr;
-  /* background-color: red; */
+  background-color: #ecf4f1;
+  color: #141918;
 }
 
 .header-top {
-  /* background-color: pink; */
   display: grid;
-  grid-template-columns: 48px 2fr 48px 48px 200px;
+  grid-template-columns: 48px 2fr 60px 60px 150px;
   justify-items: end;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 50px;
 }
 
 .search {
   justify-self: start;
+  background-color: #ecf4f1;
 }
 
 .header-bottom {
   display: grid;
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .header-bottom-left {
@@ -91,8 +96,11 @@ table {
 }
 
 .header-bottom-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-self: end;
   align-self: center;
+  column-gap: 20px;
   padding-right: 30px;
 }
 
@@ -102,8 +110,15 @@ table {
   display: grid;
   row-gap: 10px;
   align-content: start;
-  background-color: green;
+  background-color: #20B183;
+  color: #edf4f1;
+  padding: 20px 0px 0px 20px;
+}
 
+.sidebar-icon {
+  /* same as eventual sidebar font size */
+  height: 12px;
+  filter: invert(99%) sepia(2%) saturate(400%) hue-rotate(93deg) brightness(97%) contrast(98%);
 }
 
 .site-title {
@@ -119,25 +134,71 @@ table {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 20px;
-  padding: 0px 20px;
-  background-color: blue;
+  padding: 20px;
+
 }
 
 .projects {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   display: grid;
-  grid-template: 50px repeat(3, 1fr) / repeat(2, 1fr);
+  grid-template: 10px repeat(3, 1fr) / repeat(2, 1fr);
   gap: 20px;
-  background-color: lightblue;
+  padding-right: 20px;
 }
 
 .main-section-heading {
   grid-column: span 2;
 }
 
+.card-container {
+  border-radius: 12px;
+  background-color: #20B183;
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  justify-content: end;
+}
+
 .card {
-  background-color: white;
+  padding: 25px;
+  background-color: #285D4C;
+  margin-left: 10px;
+  border-radius: 0px 12px 0px 0px;
+  color: #e6ece9;
+  /* font size tbd */
+  font-size: 12px;
+}
+
+.card-icon-row {
+  display: grid;
+  grid-template-columns: 4fr repeat(3, 1fr);
+  grid-row: 2 / 3;
+  background-color: #285D4C;
+  margin: 0px 0px .5px 10px;
+  border-radius: 0px 0px 12px 0px;
+  grid-template-areas: ". icon1 icon2 icon3";
+}
+
+.card-icon-row .icon path {
+  fill: #81DABE;
+
+}
+
+.project-icon {
+  height: 20px;
+  filter: invert(92%) sepia(9%) saturate(1615%) hue-rotate(96deg) brightness(90%) contrast(89%);
+}
+
+#star-icon {
+  grid-area: icon1;
+}
+
+#eye-icon {
+  grid-area: icon2;
+}
+
+#share-icon {
+  grid-area: icon3;
 }
 
 .announcements-container {
@@ -145,20 +206,17 @@ table {
   display: grid;
   grid-template-rows: 30px 1fr;
   grid-template-columns: 1fr;
-  color: white;
+  color: black;
 }
 
 .announcement-block {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px 0px;
-  border-radius: 5%;
-  background-color: teal;
-}
-
-.announcement-post {
-  color: black;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #81DABE;
+  color: #141918;
 }
 
 .announcement-content {
@@ -170,7 +228,7 @@ table {
   display: grid;
   grid-template-rows: 30px 1fr;
   grid-template-columns: 1fr;
-  color: white;
+  color: black;
 }
 
 .trending-block {
@@ -180,8 +238,9 @@ table {
   justify-content: center;
   align-items: center;
   padding: 20px 0px;
-  border-radius: 5%;
-  background-color: orange;
+  border-radius: 12px;
+  background-color: #81DABE;
+  color: #141918;
 }
 
 .trending-account {
@@ -190,7 +249,6 @@ table {
   column-gap: 7px;
   align-items: center;
   font-size: .7rem;
-  color: black;
 }
 
 .profile-pic {
@@ -200,4 +258,24 @@ table {
 
 .profile-pic-big {
   height: 60px
+}
+svg {
+  height: 20px;
+}
+
+svg path {
+  fill: #285D4C;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #20B183;
+  color: #e6ece9;
+  border-radius: 18px;
+  border-style: none;
+  cursor: pointer;
+}
+
+h2 {
+  font-weight: 800;
 }
