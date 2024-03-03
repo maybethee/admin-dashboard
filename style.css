@@ -47,6 +47,22 @@ table {
 	border-spacing: 0;
 }
 
+:root {
+  --header-sidebar-font: "Montserrat", sans-serif;
+  --header-sidebar-main-size: 20px;
+  --header-sidebar-smaller-size: 14px;
+  --header-sidebar-bold: 900;
+  --header-sidebar-lighter: 600;
+  --main-section-font: "Hind", sans-serif;
+  --main-section-heading-size: 18px;
+  --card-title-size: 16px;
+  --card-title-weight: 600;
+  --card-body-size: 12px;
+  --card-body-weight: 400;
+  --announcement-trending-title-size: 12px;
+  --announcement-trending-body-size: 10px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -61,7 +77,15 @@ table {
   display: grid;
   grid-template-rows: 1fr 2fr;
   background-color: #ecf4f1;
+  font-family: var(--header-sidebar-font);
+  font-size: var(--header-sidebar-smaller-size);
+  font-weight: var(--header-sidebar-lighter);
   color: #141918;
+}
+
+.large-text {
+  font-size: var(--header-sidebar-main-size);
+  font-weight: var(--header-sidebar-bold);
 }
 
 .header-top {
@@ -108,21 +132,36 @@ table {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   display: grid;
-  row-gap: 10px;
   align-content: start;
   background-color: #20B183;
+  font-family: var(--header-sidebar-font);
+  font-size: var(--header-sidebar-main-size);
+  font-weight: var(--header-sidebar-lighter);
   color: #edf4f1;
   padding: 20px 0px 0px 20px;
 }
 
+.sidebar-wrapper {
+  display: grid;
+  gap: 12px;
+}
+
+.title-icon,
 .sidebar-icon {
-  /* same as eventual sidebar font size */
-  height: 12px;
-  filter: invert(99%) sepia(2%) saturate(400%) hue-rotate(93deg) brightness(97%) contrast(98%);
+  filter: invert(99%) sepia(2%) saturate(400%) hue-rotate(93deg) brightness(97%) contrast(98%);  
+}
+
+.title-icon {
+  height: 40px;
+}
+
+.sidebar-icon {
+  height: var(--header-sidebar-main-size);
 }
 
 .site-title {
-  grid-row: span 5;
+  grid-row: span 9;
+  font-size: 24px;
 }
 
 .end-link-section {
@@ -135,7 +174,7 @@ table {
   grid-template-columns: 2.5fr 1fr;
   gap: 20px;
   padding: 20px;
-
+  font-family: var(--main-section-font);
 }
 
 .projects {
@@ -149,6 +188,8 @@ table {
 
 .main-section-heading {
   grid-column: span 2;
+  font-size: var(--main-section-heading-size);
+  font-weight: var(--card-title-weight);
 }
 
 .card-container {
@@ -164,9 +205,16 @@ table {
   background-color: #285D4C;
   margin-left: 10px;
   border-radius: 0px 12px 0px 0px;
+  color: #e0e7e3;
+  font-size: var(--card-body-size);
+  font-weight: var(--card-body-weight);
+}
+
+.card p:first-child {
   color: #e6ece9;
-  /* font size tbd */
-  font-size: 12px;
+  line-height: 1.5;
+  font-size: var(--card-title-size);
+  font-weight: var(--card-title-weight);
 }
 
 .card-icon-row {
@@ -181,7 +229,6 @@ table {
 
 .card-icon-row .icon path {
   fill: #81DABE;
-
 }
 
 .project-icon {
@@ -219,8 +266,15 @@ table {
   color: #141918;
 }
 
+.announcement-title {
+  line-height: 1.5;
+  font-size: var(--announcement-trending-title-size);
+  font-weight: var(--card-title-weight)
+}
+
 .announcement-content {
-  font-size: 10px;
+  font-size: var(--announcement-trending-body-size);
+  font-weight: var(--card-body-weight);
 }
 
 .trending-container {
@@ -228,16 +282,15 @@ table {
   display: grid;
   grid-template-rows: 30px 1fr;
   grid-template-columns: 1fr;
-  color: black;
 }
 
 .trending-block {
   display: grid;
   gap: 20px;
   grid-template-rows: repeat(4, 1fr);
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  padding: 20px 0px;
+  padding: 25px 0px 25px 25px;
   border-radius: 12px;
   background-color: #81DABE;
   color: #141918;
@@ -245,15 +298,30 @@ table {
 
 .trending-account {
   display: grid;
+  row-gap: 5px;
+  column-gap: 10px;
   grid-template-columns: 48px 1fr;
-  column-gap: 7px;
-  align-items: center;
-  font-size: .7rem;
+  grid-template-rows: 1fr 1fr;
+  align-items: start;
+  font-size: var(--card-body-size);
+  font-weight: var(--card-body-weight);
+}
+
+.trending-account img {
+  grid-row: 1 / 3;
+}
+
+.trending-account p {
+  grid-column: 2 / 3;
+}
+
+.trending-handle {
+  align-self: end;
 }
 
 .profile-pic {
   border-radius: 50%;
-  height: 40px;
+  height: 48px;
 }
 
 .profile-pic-big {
@@ -270,12 +338,11 @@ svg path {
 button {
   padding: 15px 30px;
   background-color: #20B183;
+  font-family: var(--header-sidebar-font);
+  font-size: var(--header-sidebar-smaller-size);
+  font-weight: var(--header-sidebar-lighter);
   color: #e6ece9;
-  border-radius: 18px;
+  border-radius: 24px;
   border-style: none;
   cursor: pointer;
-}
-
-h2 {
-  font-weight: 800;
 }
