@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"<
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <title>Admin Dashboard</title>
 </head>
@@ -40,14 +41,19 @@
     </div>
 
     <div class="sidebar">
-      <div class="sidebar-wrapper">
-        <div class="site-title large-text"><img src="assets/pig-variant.svg" alt="" class="title-icon"> Dashboard</div>
+      <div class="site-title large-text"><img src="assets/pig-variant.svg" alt="" class="title-icon"> Dashboard</div>
+      <div class="sidebar-section-1">
         <div class="nav-link"><img src="assets/home.svg" alt="" class="sidebar-icon"> Home</div>
-        <div class="nav-link"><img src="assets/card-account-details-outline.svg" alt="" class="sidebar-icon"> Profile</div>
+        <div class="nav-link">
+          <img src="assets/card-account-details-outline.svg" alt="" class="sidebar-icon"> 
+          <p>Profile</p>
+        </div>
         <div class="nav-link"><img src="assets/message-reply.svg" alt="" class="sidebar-icon"> Messages</div>
         <div class="nav-link"><img src="assets/clock-time-three.svg" alt="" class="sidebar-icon"> History</div>
         <div class="nav-link"><img src="assets/note-multiple.svg" alt="" class="sidebar-icon"> Tasks</div>
         <div class="nav-link end-link-section"><img src="assets/account-group.svg" alt="" class="sidebar-icon"> Community</div>
+      </div>
+      <div class="sidebar-section-2">
         <div class="nav-link"><img src="assets/cog.svg" alt="" class="sidebar-icon"> Settings</div>
         <div class="nav-link"><img src="assets/help-box.svg" alt="" class="sidebar-icon"> Support</div>
         <div class="nav-link"><img src="assets/shield-check.svg" alt="" class="sidebar-icon"> Privacy</div>
@@ -59,8 +65,31 @@
         <div class="main-section-heading">Your Projects</div>
         <div class="card-container">
           <div class="card">
-            <p class="title">Project Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            <p class="title">Super Cool Project</p>
+            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+          </div>
+          <div class="card-icon-row">
+            <img src="assets/star-plus-outline.svg" alt="" class="project-icon" id="star-icon">
+            <img src="assets/eye-plus-outline.svg" alt="" class="project-icon" id="eye-icon">
+            <img src="assets/share-variant-outline.svg" alt="" class="project-icon" id="share-icon">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <p class="title">Less Cool Project</p>
+            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, vacilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+          </div>
+          <div class="card-icon-row">
+            <img src="assets/star-plus-outline.svg" alt="" class="project-icon" id="star-icon">
+            <img src="assets/eye-plus-outline.svg" alt="" class="project-icon" id="eye-icon">
+            <img src="assets/share-variant-outline.svg" alt="" class="project-icon" id="share-icon">
+          </div>
+
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <p class="title">Impossible App</p>
+            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
           </div>
 
           <div class="card-icon-row">
@@ -72,19 +101,8 @@
         </div>
         <div class="card-container">
           <div class="card">
-            <p class="title">Project Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-          </div>
-          <div class="card-icon-row">
-            <img src="assets/star-plus-outline.svg" alt="" class="project-icon" id="star-icon">
-            <img src="assets/eye-plus-outline.svg" alt="" class="project-icon" id="eye-icon">
-            <img src="assets/share-variant-outline.svg" alt="" class="project-icon" id="share-icon">
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="card">
-            <p class="title">Project Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            <p class="title">Easy Peasy App</p>
+            <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
           </div>
 
           <div class="card-icon-row">
@@ -96,8 +114,8 @@
         </div>
         <div class="card-container">
           <div class="card">
-            <p class="title">Project Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            <p class="title">Ad Blocker</p>
+            <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
           </div>
 
           <div class="card-icon-row">
@@ -109,21 +127,8 @@
         </div>
         <div class="card-container">
           <div class="card">
-            <p class="title">Project Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-          </div>
-
-          <div class="card-icon-row">
-            <img src="assets/star-plus-outline.svg" alt="" class="project-icon" id="star-icon">
-            <img src="assets/eye-plus-outline.svg" alt="" class="project-icon" id="eye-icon">
-            <img src="assets/share-variant-outline.svg" alt="" class="project-icon" id="share-icon">
-          </div>
-
-        </div>
-        <div class="card-container">
-          <div class="card">
-            <p class="title">Project Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            <p class="title">Money Maker</p>
+            <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
           </div>
 
           <div class="card-icon-row">
