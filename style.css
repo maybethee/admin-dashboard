@@ -372,6 +372,7 @@ table {
 
 .trending-handle {
   align-self: end;
+  font-weight: var(--card-title-weight);
 }
 
 .profile-pic {
